@@ -1,0 +1,74 @@
+body {
+  background-color: red;
+}
+
+body {
+  cursor: url("images/wand-cursor-transparent.png") 4 4, auto;
+}
+
+body {
+  font-family: "Macondo Swash Caps", cursive;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.magic-font {
+  font-family: "Macondo Swash Caps", cursive;
+  color: #ffd700 !important;
+  text-shadow: 0 0 5px #fffccc, 0 0 10px #ffd700;
+}
+
+.navbar-dark .nav-link {
+  color: #ddd !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ffd700 !important;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.magic-table {
+  background-color: #1a1a1a !important;
+  color: #ffffff;
+  border: 2px solid #ffd70055;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ffd70099;
+  animation: shimmer-table 2s infinite ease-in-out;
+}
+
+.magic-table thead {
+  background-color: #222222 !important;
+  color: #ffd700;
+}
+
+.magic-table tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+@keyframes shimmer-table {
+  0% {
+    box-shadow: 0 0 6px #ffd70055;
+    border-color: #ffd70055;
+  }
+  50% {
+    box-shadow: 0 0 12px #ffd700cc;
+    border-color: #ffd700cc;
+  }
+  100% {
+    box-shadow: 0 0 6px #ffd70055;
+    border-color: #ffd70055;
+  }
+}
+.magic-table thead th {
+  font-size: 1.25rem; /* larger text */
+  font-weight: 700; /* bold */
+  color: #ffd700; /* gold text */
+  text-shadow: 0 0 4px #ffd70055;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
