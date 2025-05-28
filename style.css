@@ -8,19 +8,18 @@ html {
   padding: 0;
   height: 100%;
   background: #000;
-  overflow-x: hidden; /*evita que se vea la barra de desplazamiento horizontal*/
+  overflow-x: hidden;
 }
 
 .starry-background {
   position: relative;
   min-height: 100vh;
   padding-bottom: 100px;
-  z-index: 0; /*lo pone detras del contenido principal, que tiene z-index:1 mas adelante*/
+  z-index: 0;
 }
 
 .starry-background::before,
 .starry-background::after {
-  /*Los pseudoelementos ::before y ::after se usan para crear capas de estrellas animadas sin afectar el contenido real.*/
   content: "";
   position: absolute;
   top: -50%;
@@ -57,7 +56,7 @@ html {
     radial-gradient(150px 150px at 35% 50%, #fff, transparent);
   animation: star-move-reverse 20s round infinite;
 }
-/*@keyframes define como debe cambiar un elemento a lo largo del tiempo*/
+
 @keyframes star-move {
   0% {
     transform: translate(0, 0);
@@ -95,7 +94,7 @@ body {
 }
 
 .navbar-dark .nav-link {
-  color: #ddd !important; /*use !important para forzar el color, para sobreescribir los estilos de bootstrap por ej*/
+  color: #ddd !important;
   transition: color 0.3s ease;
 }
 
@@ -160,7 +159,7 @@ body {
   white-space: nowrap;
   text-shadow: 0 0 8px #ffffffcc, 0 0 12px #b6a0ff;
   animation: glow 1.5s infinite alternate;
-  pointer-events: none; /* No bloquea clics sobre la imagen */
+  pointer-events: none;
 }
 
 @keyframes glow {
